@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nguyen Tang Sy | Industrial Automation Engineer</title>
+<meta name="description" content="Industrial Automation Engineer with 5 years of PLC, HMI/SCADA and commissioning experience on food and beverage projects across Vietnam, South Korea, Thailand, the Philippines and Indonesia.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#12304A">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Nguyen Tang Sy | Industrial Automation Engineer">
+<meta property="og:description" content="PLC & SCADA engineer delivering food and beverage automation projects for global brands across Asia: development, FAT with customers, commissioning and start-up.">
+<meta property="og:url" content="https://ngtgsyw.github.io/">
+<meta property="og:image" content="https://ngtgsyw.github.io/assets/photo.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#12304A; --navy-deep:#0B2236; --teal:#167D9A; --teal-dark:#0F6680; --teal-bright:#2BB3D6;
+  --ink:#1B2733; --muted:#4A5B6B; --line:#DCE5EC; --bg:#FFFFFF; --bg-alt:#F3F7FA; --chip:#E7F3F7;
+  --radius:14px; --shadow:0 1px 2px rgba(18,48,74,.06),0 6px 20px rgba(18,48,74,.07);
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--teal-dark)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal-bright);outline-offset:2px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy);text-decoration:none;letter-spacing:.2px}
+.brand-mark{width:34px;height:34px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:800;letter-spacing:.5px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+.nav ul a{display:block;padding:8px 12px;border-radius:8px;color:var(--navy);text-decoration:none;font-weight:600;font-size:15px}
+.nav ul a:hover{background:var(--bg-alt);color:var(--teal-dark)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;color:var(--navy)}
+.menu-btn svg{width:22px;height:22px}
+@media (max-width:900px){
+  .menu-btn{display:grid;place-items:center}
+  .nav ul{display:none;position:absolute;left:0;right:0;top:64px;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:8px 12px 14px;box-shadow:var(--shadow)}
+  .nav ul.open{display:flex}
+  .nav ul a{padding:12px 10px;font-size:16px}
+}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 60%,#16405F 100%);color:#fff}
+.hero .wrap{display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:center;padding-top:72px;padding-bottom:72px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--teal-bright)}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--teal-bright)}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:14px 0 10px;font-weight:800;letter-spacing:-.5px}
+.hero .role{font-size:clamp(18px,2.4vw,22px);font-weight:600;color:#D7E7EF;margin:0 0 18px}
+.hero .lead{font-size:17px;color:#E6EEF3;max-width:620px;margin:0 0 26px}
+.open-to{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.open-to li{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:7px 12px;border-radius:999px;font-size:14px;font-weight:600}
+.open-to li::before{content:"";width:8px;height:8px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 3px rgba(61,220,151,.25)}
+.open-label{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#B9CEDB;margin:0 0 8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;padding:13px 20px;border-radius:10px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;line-height:1.2}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--teal-bright);color:var(--navy-deep)}
+.btn-primary:hover{background:#4FC4E2}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.portrait img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:18px;border:4px solid rgba(255,255,255,.9);box-shadow:0 20px 40px rgba(0,0,0,.35);background:#BFD9EA}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:1px solid rgba(255,255,255,.18);padding-top:24px;max-width:560px}
+.stat{padding-right:16px}
+.stat strong{display:block;font-size:clamp(28px,4vw,38px);font-weight:800;line-height:1;color:#fff}
+.stat span{display:block;margin-top:6px;font-size:14px;color:#C9DAE5;font-weight:500}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:32px;padding-top:44px;padding-bottom:52px}
+  .portrait{order:-1;max-width:200px}
+}
+@media (max-width:420px){
+  .portrait{max-width:160px}
+  .btn{flex:1 1 100%;justify-content:center}
+}
+
+/* Sections */
+section{padding:80px 0}
+section.alt{background:var(--bg-alt)}
+.sec-head{margin-bottom:36px;max-width:720px}
+.sec-head .eyebrow{color:var(--teal-dark)}
+.sec-head .eyebrow::before{background:var(--teal)}
+.sec-head h2{font-size:clamp(28px,3.6vw,38px);line-height:1.15;margin:10px 0 10px;color:var(--navy);font-weight:800;letter-spacing:-.3px}
+.sec-head p{margin:0;color:var(--muted);font-size:17px}
+@media (max-width:600px){section{padding:56px 0}}
+
+/* About */
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:start}
+.about p{font-size:18px;color:var(--ink);margin:0 0 16px}
+.about p strong{color:var(--navy)}
+.facts{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:8px 22px;box-shadow:var(--shadow)}
+.facts dl{margin:0}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0}
+.facts dt{color:var(--muted);font-weight:500}
+.facts dd{margin:0;font-weight:700;color:var(--navy);text-align:right}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+
+/* Highlights */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.hl .ico{width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;margin-bottom:16px}
+.hl .ico svg{width:24px;height:24px}
+.hl h3{margin:0 0 8px;font-size:18px;color:var(--navy);line-height:1.3}
+.hl p{margin:0;color:var(--muted);font-size:15.5px}
+@media (max-width:1000px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid-4{grid-template-columns:1fr}}
+
+/* Process */
+.process{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;counter-reset:step}
+.process li{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 16px;box-shadow:var(--shadow);counter-increment:step}
+.process li::before{content:counter(step,decimal-leading-zero);display:block;font-weight:800;font-size:14px;color:var(--teal-dark);letter-spacing:1px;margin-bottom:10px}
+.process li:not(:last-child)::after{content:"";position:absolute;top:30px;right:-14px;width:14px;height:2px;background:var(--teal)}
+.process h3{margin:0 0 6px;font-size:17px;color:var(--navy)}
+.process p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
+.process li.key{background:var(--navy);border-color:var(--navy)}
+.process li.key h3{color:#fff}
+.process li.key p{color:#D3E2EB}
+.process li.key::before{color:var(--teal-bright)}
+.process .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;background:var(--teal-bright);color:var(--navy-deep);padding:3px 8px;border-radius:6px}
+@media (max-width:1000px){
+  .process{grid-template-columns:1fr;gap:12px;padding-left:18px;border-left:2px solid var(--teal)}
+  .process li{padding:16px 18px}
+  .process li:not(:last-child)::after{display:none}
+  .process li::before{display:inline;margin:0 10px 0 0}
+  .process h3{display:inline}
+  .process p{margin-top:6px}
+}
+
+/* Projects */
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.proj{display:flex;flex-direction:column;border-top:4px solid var(--teal)}
+.proj.overseas{border-top-color:var(--navy)}
+.proj-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;letter-spacing:.3px;text-transform:uppercase}
+.pill.ov{background:var(--navy);color:#fff}
+.pill.dm{background:var(--chip);color:var(--teal-dark)}
+.date{font-size:14px;font-weight:600;color:var(--muted)}
+.proj h3{margin:0 0 4px;font-size:20px;line-height:1.3;color:var(--navy)}
+.client{display:flex;align-items:center;gap:6px;margin:0 0 14px;font-weight:600;color:var(--teal-dark);font-size:15.5px}
+.client svg{width:16px;height:16px;flex:none}
+.proj ul{margin:0 0 16px;padding-left:20px;color:var(--ink)}
+.proj li{margin-bottom:6px;font-size:15.5px}
+.chips,.proj ul.chips{display:flex;flex-wrap:wrap;gap:8px;margin:auto 0 0;padding:0;list-style:none}
+.chips li{background:var(--chip);color:var(--navy);font-size:13.5px;font-weight:600;padding:5px 10px;border-radius:8px;margin:0}
+@media (max-width:860px){.projects{grid-template-columns:1fr}}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill h3{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:17px;color:var(--navy)}
+.skill h3::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--teal)}
+@media (max-width:1000px){.skills{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.skills{grid-template-columns:1fr}}
+
+/* Experience */
+.job{display:grid;grid-template-columns:240px 1fr;gap:32px}
+.job-meta h3{margin:0 0 6px;color:var(--navy);font-size:20px;line-height:1.3}
+.job-meta p{margin:0 0 4px;color:var(--muted);font-weight:500}
+.job-meta .now{display:inline-block;margin-top:10px;background:var(--chip);color:var(--teal-dark);font-weight:700;font-size:13px;padding:4px 10px;border-radius:999px}
+.job ul{margin:0;padding-left:20px}
+.job li{margin-bottom:10px;font-size:16px}
+.job li strong{color:var(--navy)}
+@media (max-width:760px){.job{grid-template-columns:1fr;gap:16px}}
+
+/* Education */
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.edu h3{margin:0 0 6px;color:var(--navy);font-size:19px}
+.edu p{margin:0 0 6px;color:var(--muted)}
+.edu .big{font-size:30px;font-weight:800;color:var(--teal-dark);line-height:1.1;margin:10px 0 4px}
+@media (max-width:700px){.edu{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{background:var(--navy);color:#fff;text-align:center}
+.contact .sec-head{margin:0 auto 28px}
+.contact .sec-head h2{color:#fff}
+.contact .sec-head p{color:#D3E2EB}
+.contact .sec-head .eyebrow{color:var(--teal-bright)}
+.contact .sec-head .eyebrow::before{background:var(--teal-bright)}
+.email-big{display:inline-block;font-size:clamp(20px,3.6vw,30px);font-weight:800;color:#fff;text-decoration:none;border-bottom:3px solid var(--teal-bright);padding-bottom:4px;margin-bottom:28px;word-break:break-all}
+.contact .btns{justify-content:center}
+.copied{display:block;min-height:24px;margin-top:12px;color:#3DDC97;font-weight:600}
+footer{background:var(--navy-deep);color:#A9BFCD;font-size:14px;padding:22px 0;text-align:center}
+
+/* Reveal */
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}}
+
+/* Print */
+@media print{
+  .nav,.btns,.skip,.copied{display:none!important}
+  .hero,.contact{background:#fff!important;color:var(--ink)!important}
+  .hero h1,.contact .sec-head h2,.email-big,.stat strong{color:var(--navy)!important}
+  .hero .role,.hero .lead,.stat span,.contact .sec-head p{color:var(--ink)!important}
+  .open-to li{border-color:var(--line);color:var(--ink)}
+  section{padding:24px 0}
+  .card{box-shadow:none;break-inside:avoid}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Nguyen Tang Sy, back to top"><span class="brand-mark">NTS</span><span>Nguyen Tang Sy</span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">PLC · SCADA · Commissioning</span>
+      <h1>Nguyen Tang Sy</h1>
+      <p class="role">Industrial Automation Engineer · Ho Chi Minh City, Vietnam</p>
+      <p class="lead">I develop, test and commission PLC and SCADA systems for food and beverage plants of global brands across Asia, and run FAT sessions with customers in English.</p>
+      <p class="open-label">Open to</p>
+      <ul class="open-to">
+        <li>System integrator &amp; project roles</li>
+        <li>International travel &amp; site assignments</li>
+      </ul>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:ngtgsy.w@gmail.com?subject=Job%20opportunity%20-%20Automation%20Engineer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+        <a class="btn btn-ghost" href="#projects">View projects</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>5+</strong><span>Years of experience</span></div>
+        <div class="stat"><strong>6</strong><span>Major F&amp;B projects</span></div>
+        <div class="stat"><strong>5</strong><span>Countries</span></div>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="assets/photo.jpg" width="900" height="1200" alt="Portrait of Nguyen Tang Sy">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">About</span>
+      <h2>Automation for food &amp; beverage, from code to start-up</h2>
+    </div>
+    <div class="about">
+      <div class="reveal">
+        <p>Industrial Automation Engineer with <strong>5 years of experience</strong> delivering PLC, HMI/SCADA and process control solutions for large-scale food and beverage projects in Vietnam and abroad, for global brands including <strong>Nestlé, Suntory PepsiCo and Dong-A Otsuka</strong>.</p>
+        <p>Proficient in <strong>Siemens S7-1500 / WinCC</strong> and <strong>Allen-Bradley ControlLogix / AVEVA</strong>, covering the full project lifecycle: requirements, software development, <strong>Factory Acceptance Testing (FAT) with customers</strong>, site commissioning, production start-up and handover.</p>
+        <p>Confident communicating in English with international customers and multinational teams, from technical meetings and FAT sessions to on-site commissioning overseas. Strong background in CIP, aseptic, dairy and beverage processing, pasteurization and product transfer systems.</p>
+      </div>
+      <div class="facts reveal" aria-label="Quick facts">
+        <dl>
+          <div><dt>Based in</dt><dd>Ho Chi Minh City</dd></div>
+          <div><dt>Current role</dt><dd>Automation Engineer</dd></div>
+          <div><dt>Industry</dt><dd>Food &amp; Beverage</dd></div>
+          <div><dt>Platforms</dt><dd>Siemens · Rockwell · AVEVA</dd></div>
+          <div><dt>English</dt><dd>TOEIC 815</dd></div>
+          <div><dt>Education</dt><dd>HCMUT, Control &amp; Automation</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="highlights" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Key highlights</span>
+      <h2>What I bring to your projects</h2>
+    </div>
+    <div class="grid-4">
+      <article class="card hl reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h3>International project delivery</h3>
+        <p>6 major F&amp;B automation projects for multinational clients, 4 of them overseas in South Korea, Thailand, the Philippines and Indonesia.</p>
+      </article>
+      <article class="card hl reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div>
+        <h3>FAT with customers</h3>
+        <p>Prepare test protocols and run Factory Acceptance Tests: demonstrate sequences, interlocks and alarms, then close punch-list items for sign-off.</p>
+      </article>
+      <article class="card hl reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></div>
+        <h3>Customer-facing in English</h3>
+        <p>TOEIC 815. Work directly with customer engineers, project managers and operators in meetings, emails, FAT sessions and on site abroad.</p>
+      </article>
+      <article class="card hl reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 9h3M7 12h6"/></svg></div>
+        <h3>Siemens &amp; Rockwell</h3>
+        <p>Hands-on with both Siemens and Rockwell / AVEVA ecosystems, adapting quickly to each customer's standards and specifications.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How I deliver</span>
+      <h2>One engineer across the whole project lifecycle</h2>
+      <p>I follow each system from the first specification to the moment operators run it in production.</p>
+    </div>
+    <ol class="process">
+      <li class="reveal"><h3>Requirements</h3><p>Clarify process needs and control specifications with the customer and process team.</p></li>
+      <li class="reveal"><h3>Develop</h3><p>PLC logic in Ladder and SCL / Structured Text, plus SCADA / HMI screens.</p></li>
+      <li class="reveal key"><h3>FAT</h3><p>Factory Acceptance Test with the customer, run in English.</p><span class="tag">Customer sign-off</span></li>
+      <li class="reveal"><h3>Commissioning</h3><p>I/O checkout, water testing, passivation and CIP testing on site.</p></li>
+      <li class="reveal"><h3>Start-up</h3><p>Support production start-up and troubleshoot until the line runs stably.</p></li>
+      <li class="reveal"><h3>Handover</h3><p>Documentation, system handover and operator training.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Selected projects</span>
+      <h2>Food &amp; beverage projects for global brands</h2>
+      <p>Four overseas and two domestic projects, all for multinational customers.</p>
+    </div>
+    <div class="projects">
+      <article class="card proj overseas reveal">
+        <div class="proj-top"><span class="pill ov">Overseas</span><span class="date">Mar 2026 – Present</span></div>
+        <h3>NCB Processing for Aseptic Line</h3>
+        <p class="client"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Dong-A Otsuka · South Korea</p>
+        <ul>
+          <li>Develop PLC logic and WinCC SCADA for non-carbonated beverage processing supplying an aseptic filling line.</li>
+          <li>Supported FAT with the customer, coordinating with the customer team in English.</li>
+        </ul>
+        <ul class="chips"><li>Siemens S7-1500</li><li>WinCC</li><li>Aseptic</li></ul>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="pill dm">Domestic</span><span class="date">Mar 2025 – Feb 2026</span></div>
+        <h3>Carbonated Soft Drink Process</h3>
+        <p class="client"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Suntory PepsiCo · Long An, Vietnam</p>
+        <ul>
+          <li>Developed S7-1500 PLC programs and WinCC SCADA applications for the carbonated soft drink process.</li>
+          <li>Performed FAT with the customer, I/O checkout and on-site commissioning through production start-up and handover.</li>
+        </ul>
+        <ul class="chips"><li>Siemens S7-1500</li><li>WinCC</li><li>CSD</li></ul>
+      </article>
+      <article class="card proj overseas reveal">
+        <div class="proj-top"><span class="pill ov">Overseas</span><span class="date">Aug 2024 – Feb 2025</span></div>
+        <h3>Pasteurizer &amp; Pre-heater for Coconut Water</h3>
+        <p class="client"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Century Pacific Foods · Philippines</p>
+        <ul>
+          <li>Developed ControlLogix PLC and AVEVA InTouch applications for pasteurizer and pre-heater control.</li>
+          <li>Executed FAT with the customer, then commissioned the system on site and supported start-up with the customer's engineering team in English.</li>
+        </ul>
+        <ul class="chips"><li>ControlLogix</li><li>AVEVA InTouch</li><li>Pasteurization</li></ul>
+      </article>
+      <article class="card proj overseas reveal">
+        <div class="proj-top"><span class="pill ov">Overseas</span><span class="date">Jun 2024 – Jul 2024</span></div>
+        <h3>Automated Clean-in-Place (CIP) Skid</h3>
+        <p class="client"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Nestlé Purina PetCare · Thailand</p>
+        <ul>
+          <li>Developed ControlLogix PLC and AVEVA System Platform applications for an automated CIP skid.</li>
+          <li>Performed FAT with the customer, then tested CIP sequences, verified process parameters and completed on-site commissioning.</li>
+        </ul>
+        <ul class="chips"><li>ControlLogix</li><li>AVEVA System Platform</li><li>CIP</li></ul>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="pill dm">Domestic</span><span class="date">Mar 2023 – May 2024</span></div>
+        <h3>Juice and Tea Processing</h3>
+        <p class="client"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Suntory PepsiCo · Can Tho, Vietnam</p>
+        <ul>
+          <li>Developed S7-1500 PLC and WinCC SCADA applications for juice and tea processing systems.</li>
+          <li>Performed FAT with the customer, followed by site testing, commissioning and production start-up.</li>
+        </ul>
+        <ul class="chips"><li>Siemens S7-1500</li><li>WinCC</li><li>Juice &amp; Tea</li></ul>
+      </article>
+      <article class="card proj overseas reveal">
+        <div class="proj-top"><span class="pill ov">Overseas</span><span class="date">Nov 2021 – Jan 2023</span></div>
+        <h3>Batik &amp; Spark</h3>
+        <p class="client"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Nestlé · Indonesia</p>
+        <ul>
+          <li>Developed ControlLogix PLC and AVEVA System Platform applications for Nescafé, Milo and fresh milk processing lines.</li>
+          <li>Performed FAT with the customer, then on-site commissioning within an international project team, communicating in English.</li>
+        </ul>
+        <ul class="chips"><li>ControlLogix</li><li>AVEVA System Platform</li><li>Dairy &amp; Coffee</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Technical skills</span>
+      <h2>Tools and technologies</h2>
+    </div>
+    <div class="skills">
+      <div class="card skill reveal"><h3>PLC Programming</h3><ul class="chips"><li>Siemens S7-1500</li><li>TIA Portal</li><li>Allen-Bradley ControlLogix</li><li>Studio 5000</li><li>Ladder</li><li>SCL / Structured Text</li></ul></div>
+      <div class="card skill reveal"><h3>HMI / SCADA</h3><ul class="chips"><li>Siemens WinCC</li><li>AVEVA InTouch</li><li>AVEVA System Platform</li></ul></div>
+      <div class="card skill reveal"><h3>Networks &amp; Field Devices</h3><ul class="chips"><li>Profinet</li><li>EtherNet/IP</li><li>Modbus</li><li>VFDs</li><li>Flowmeters</li><li>Instrumentation</li></ul></div>
+      <div class="card skill reveal"><h3>Testing &amp; Commissioning</h3><ul class="chips"><li>FAT with customers</li><li>I/O checkout</li><li>Water testing</li><li>Passivation</li><li>CIP sequence testing</li><li>Production start-up</li></ul></div>
+      <div class="card skill reveal"><h3>Process Automation</h3><ul class="chips"><li>CIP</li><li>Aseptic processing</li><li>Pasteurization</li><li>Dairy &amp; coffee</li><li>Blending</li><li>Product transfer</li></ul></div>
+      <div class="card skill reveal"><h3>Delivery &amp; Other</h3><ul class="chips"><li>FAT protocols &amp; reports</li><li>Technical documentation</li><li>Operator training</li><li>Visual Basic</li><li>SQL</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>Professional experience</h2>
+    </div>
+    <div class="card job reveal">
+      <div class="job-meta">
+        <h3>Automation Engineer</h3>
+        <p>Hoang Thinh Engineering JSC</p>
+        <p>Nov 2021 – Present</p>
+        <p>Ho Chi Minh City, with overseas site assignments</p>
+        <span class="now">Current role</span>
+      </div>
+      <ul>
+        <li>Deliver end-to-end automation for food and beverage process lines for multinational customers in Vietnam and across Asia.</li>
+        <li>Develop PLC programs and SCADA/HMI applications based on process requirements, functional specifications and customer standards.</li>
+        <li><strong>Prepare FAT protocols and run Factory Acceptance Tests with customers:</strong> demonstrate control sequences, interlocks and alarms, record comments and resolve punch-list items before site delivery.</li>
+        <li><strong>Act as a key technical contact for international customers,</strong> communicating in English in meetings, emails and on site.</li>
+        <li>Perform I/O checkout, water testing, passivation and CIP testing during site commissioning in Vietnam and abroad.</li>
+        <li>Troubleshoot automation systems, support production start-up, and deliver system handover and operator training.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Education &amp; languages</span>
+      <h2>Background</h2>
+    </div>
+    <div class="edu">
+      <div class="card reveal">
+        <h3>Ho Chi Minh City University of Technology</h3>
+        <p>Bachelor of Engineering, Control and Automation</p>
+        <p>Aug 2017 – Aug 2021</p>
+        <p class="big">8.01 / 10</p>
+        <p>GPA</p>
+      </div>
+      <div class="card reveal">
+        <h3>Languages</h3>
+        <p><strong>English:</strong> professional working proficiency, used daily with international customers</p>
+        <p class="big">TOEIC 815</p>
+        <p><strong>Vietnamese:</strong> native</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's talk about your next project</h2>
+      <p>Open to system integrator and project roles, with international travel.</p>
+    </div>
+    <a class="email-big" href="mailto:ngtgsy.w@gmail.com?subject=Job%20opportunity%20-%20Automation%20Engineer">ngtgsy.w@gmail.com</a>
+    <div class="btns">
+      <a class="btn btn-primary" href="mailto:ngtgsy.w@gmail.com?subject=Job%20opportunity%20-%20Automation%20Engineer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+      <button class="btn btn-ghost" type="button" id="copy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>Copy email</button>
+    </div>
+    <span class="copied" id="copied" role="status" aria-live="polite"></span>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Nguyen Tang Sy · Industrial Automation Engineer</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.querySelector('.menu-btn'), menu=document.getElementById('menu');
+  btn.addEventListener('click',function(){var o=menu.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');});
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+
+  var copy=document.getElementById('copy'), msg=document.getElementById('copied'), email='ngtgsy.w@gmail.com';
+  copy.addEventListener('click',function(){
+    function done(){msg.textContent='Email copied to clipboard';setTimeout(function(){msg.textContent='';},2500);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(email).then(done,function(){msg.textContent=email;});}
+    else{msg.textContent=email;}
+  });
+
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
